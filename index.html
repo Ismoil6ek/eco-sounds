@@ -47,7 +47,7 @@
     <main>
         <div class="main-wrapper">
             <div>
-                <svg class="play-button">
+                <svg class="play-button play-pause__button">
                     <use class="play-button__element" xlink:href="assets/svg/play.svg#play"></use>
                 </svg>
 
@@ -69,9 +69,25 @@
                 <audio id="b5">
                     <source src="assets/audio/slavka.mp3" type="audio/mp3">
                 </audio>
-                <svg class="pause-button">
+                <svg class="pause-button play-pause__button">
                     <use class="play-button__element" xlink:href="assets/svg/pause.svg#pause"></use>
                 </svg>
+
+                <div class="audio-controls">
+
+                    <output id="volume-output"></output>
+                    <input type="range" id="volume-slider" max="100" value="100">
+
+                    <button id="mute-icon">
+                        <svg class="volume-up"  id="mute-icon">
+                            <use xlink:href="assets/svg/volume-up.svg#volume-up"></use>
+                        </svg>
+                        <svg class="volume-mute"  id="mute-icon">
+                            <use xlink:href="assets/svg/volume-mute.svg#volume-mute"></use>
+                        </svg>
+                    </button>
+                </div>
+
             </div>
         </div>
     </main>

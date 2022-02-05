@@ -5,7 +5,7 @@
     --russian: 'Nunito', sans-serif;
     --main-color: rgb(119, 119, 119);
     --hover-color: #fff;
-    --button: rgb(0, 116, 25);
+    --button: rgba(0, 125, 181, 1);
     --transition: all 0.3s ease-in-out;
 }
 
@@ -118,6 +118,13 @@ nav {
     margin: 0 auto;
 }
 
+.audio-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
 .play-button {
     width: 100px;
     height: 100px;
@@ -141,6 +148,44 @@ nav {
 }
 
 .pause-button:hover {
+    fill: var(--button);
+}
+
+.play-pause__button {
+    margin: 0 auto 30px;
+}
+
+#volume-slider {
+    margin-right: 20px;
+}
+
+#mute-icon {
+    width: 40px;
+    height: 40px;
+}
+
+button {
+    border-style: none;
+    background-color: transparent;
+}
+
+.volume-up {
+    display: block;
+    fill: #fff;
+    transition: var(--transition);
+}
+
+.volume-up:hover {
+    fill: var(--button);
+}
+
+.volume-mute {
+    display: none;
+    fill: #fff;
+    transition: var(--transition);
+}
+
+.volume-mute:hover {
     fill: var(--button);
 }
 

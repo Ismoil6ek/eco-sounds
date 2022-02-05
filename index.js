@@ -115,3 +115,39 @@ secondlogo.addEventListener('click', () => {
     secondlogo.style.display = "none"
     firstlogo.style.display = "block"
 })
+
+const volumeSlider = document.getElementById('volume-slider');
+const outputContainer = document.getElementById('volume-output');
+
+volumeSlider.addEventListener('input', (e) => {
+    const value = e.target.value;
+
+    current.volume = value / 100;
+});
+const muteIconContainer = document.getElementById('mute-icon');
+
+let muteState = 'unmute';
+
+
+
+muteIconContainer.addEventListener('click', () => {
+    if (muteState === 'unmute') {
+        current.muted = true;
+        muteState = 'mute';
+    } else {
+        current.muted = false;
+        muteState = 'unmute';
+    }
+});
+
+const volume_up__button = document.querySelector('.volume-up')
+const volume_mute__button = document.querySelector('.volume-mute')
+
+volume_up__button.addEventListener('click', () => {
+    volume_up__button.style.display = "none"
+    volume_mute__button.style.display = "block"
+})
+volume_mute__button.addEventListener('click', () => {
+    volume_mute__button.style.display = "none"
+    volume_up__button.style.display = "block"
+})
