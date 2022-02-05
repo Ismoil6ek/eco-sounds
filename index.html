@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/favicon.ico">
+
+    <title>ecosounds</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <!-- for footer -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Style connection -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav id="navigation">
+            <div class="firstlogo nav-item active">
+                <svg class="logo-svg first-logo bird-0">
+                    <use xlink:href="assets/svg/logo.svg#logo"></use>
+                </svg>
+            </div>
+            <div class="secondlogo">
+                <svg class="logo-svg second-logo bird-0">
+                    <use xlink:href="assets/svg/logo2.svg#logo2"></use>
+                </svg>
+            </div>
+            <div class="navigation">
+                <div class="nav-item bird-1">Соловей</div>
+                <div class="nav-item bird-2">Дрозд</div>
+                <div class="nav-item bird-3">Малиновка</div>
+                <div class="nav-item bird-4">Жаворонок</div>
+                <div class="nav-item bird-5">Славка</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-wrapper">
+            <div>
+                <svg class="play-button">
+                    <use class="play-button__element" xlink:href="assets/svg/play.svg#play"></use>
+                </svg>
+
+                <audio id="b0">
+                    <source src="assets/audio/forest.mp3" type="audio/mp3">
+                </audio>
+                <audio id="b1">
+                    <source src="assets/audio/solovey.mp3" type="audio/mp3">
+                </audio>
+                <audio id="b2">
+                    <source src="assets/audio/drozd.mp3" type="audio/mp3">
+                </audio>
+                <audio id="b3">
+                    <source src="assets/audio/zarynka.mp3" type="audio/mp3">
+                </audio>
+                <audio id="b4">
+                    <source src="assets/audio/javoronok.mp3" type="audio/mp3">
+                </audio>
+                <audio id="b5">
+                    <source src="assets/audio/slavka.mp3" type="audio/mp3">
+                </audio>
+                <svg class="pause-button">
+                    <use class="play-button__element" xlink:href="assets/svg/pause.svg#pause"></use>
+                </svg>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-wrapper__element">
+                <span>@</span>
+                <span>2022</span>
+                <span><a href="https://github.com/ismoil6ek">github</a></span>
+            </div>
+            <div class="footer-icon">
+                <a href="https://rs.school/js-stage0/">
+                    <svg class="footer-icon__element-svg">
+                        <use xlink:href="assets/svg/rss.svg#rss"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+
+
+</html>
