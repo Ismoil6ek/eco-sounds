@@ -241,15 +241,18 @@ footer {
 
 @media only screen and (max-width: 618px) {
     .firstlogo {
-        margin: 0 auto;
+        margin: 0 auto !important;
     }
     .secondlogo {
-        margin: 0 auto;
+        margin: 0 auto !important;
     }
     .nav-item {
         margin: 10px;
     }
     .main-wrapper {
         height: 50vh;
+    }
+    .navigation {
+        gap: 15px;
     }
 }
